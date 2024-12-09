@@ -17,7 +17,7 @@ if display
 end
 
 tic
-[problemStruct,result,bayesResults] = RATMain_mex(problemStruct,problemLimits,controls,priors);
+[problemStruct,result,bayesResults] = RATMain(problemStruct,problemLimits,controls,priors);
 
 if display
     toc
