@@ -121,6 +121,7 @@ classdef dataClass < tableUtilities
 
             % Make an 'inputParser' object...
             p = inputParser;
+            p.PartialMatching = false;
             
             % dataRange and simRange need to be [1 x 2] arrays
             isDimsRanges = @(x)all(size(x) == [1,2]);
